@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Jquery</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <script src="https://code.jquery.com/jquery-3.6.3.js" integrity="sha256-nQLuAZGRRcILA+6dMBOvcRh5Pe310sBpanc6+QBmyVM=" crossorigin="anonymous"></script>
+<script>
+    $(document).ready(function(){
+        $("#btnSachin").click(function(){
+            $ ("#img1").fadeToggle(3000)
+        })
+
+        
+        $("#btnGanguly").click(function(){
+            $ ("#img2").show()
+        })
+
+        $("#btnDravid").click(function(){
+            $ ("#img3").show()
+        })
+        $("#btnAzhar").click(function(){
+            $ ("#img4").show()
+        })
+        $("#btnVirat").click(function(){
+            $ ("#img5").fadeToggle(3000)
+            
+           
+            })
+           
+
+$("#btnClear").click(function(){
+    var m=confirm("Do you Want To Clear All");
+    if(m==true)
+    {
+        fn()
+    }
+    
+})
+
+$("#btnVirat").mouseenter(function(){
+                $(this).css({"background":"blue"})
+        })
+        $("#btnVirat").mouseleave(function(){
+                $(this).css({"background":"green"})
+        })
+        $("#btnSachin").mouseenter(function(){
+                $(this).css({"background":"blue"})
+        })
+        $("#btnSachin").mouseleave(function(){
+                $(this).css({"background":"green"})
+        })
+        $("#btnDravid").mouseenter(function(){
+                $(this).css({"background":"blue"})
+        })
+        $("#btnDravid").mouseleave(function(){
+                $(this).css({"background":"green"})
+        })
+        $("#btnAzhar").mouseenter(function(){
+                $(this).css({"background":"blue"})
+        })
+        $("#btnAzhar").mouseleave(function(){
+                $(this).css({"background":"green"})
+        })
+        $("#btnGanguly").mouseenter(function(){
+                $(this).css({"background":"blue"})
+        })
+        $("#btnGanguly").mouseleave(function(){
+                $(this).css({"background":"green"})
+        })
+        $("#btnClear").mouseenter(function(){
+                $(this).css({"background":"blue"})
+        })
+        $("#btnClear").mouseleave(function(){
+                $(this).css({"background":"green"})
+        })
+        
+    })
+
+    function fn()
+    {
+     var arr=   document.getElementsByClassName("imgclass")
+     for(i=0;i<arr.length;i++)
+     {
+        arr[i].style.display='none';
+     }
+    }
+</script>
+<body onload="fn()">
+    <div id="form">
+        <div>
+            <table id="table">
+                <thead>
+                    <tr>
+                    <th>
+                        <button class="theadclass" id="btnSachin">Sachin Tendulkar</button>
+                    </th>
+                    <th>
+                        <button class="theadclass" id="btnGanguly">Sourav Ganguly</button>
+                    </th>
+                    <th>
+                        <button class="theadclass" id="btnDravid">Rahul Dravid</button>
+                    </th>
+                    <th>
+                        <button class="theadclass" id="btnAzhar">Azharudheen</button>
+                    </th>
+                    <th><button class="theadclass" id="btnVirat">Virat Kohli</button></th>
+
+                    </tr>
+                    
+                </thead>
+                <tbody style="height: 300px;">
+                    <tr><td>
+                        <div class="picdiv"><img id="img1" class="imgclass"  src="sachin-records.png" aria-current=""   ></div>
+                        
+                    </td>
+                    <td>
+                        <div class="picdiv"><img id="img2" class="imgclass"  src="ganguly.jpg" aria-current="" ></div>
+                        
+                    </td>
+                    <td>
+                        <div class="picdiv"><img id="img3" class="imgclass"  src="dravid.jpg" aria-current=""  ></div>
+                        
+                    </td>
+                    <td>
+                        <div class="picdiv"><img id="img4" class="imgclass"  src="mohammed-azharuddin-1407828233-e1463134781980.jpg" aria-current=""  ></div>
+                        
+                    </td>
+                    <td>
+                        <div class="picdiv"><img id="img5" class="imgclass"  src="ViratKohli.jpg" aria-current=""  ></div>
+                        
+                    </td></tr>
+                </tbody>
+            </table>
+            <br>
+            <div id="alertdiv"> 
+                <button class="theadclass" id="btnClear">Clear All</button>
+            </div>
+        </div>
+    </div>
+</body>
+    </html>

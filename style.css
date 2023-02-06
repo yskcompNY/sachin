@@ -1,0 +1,29 @@
+.theadclass
+{
+    background-color: green;
+    font-size: 26px;
+    color: white;
+    width: 250px;
+    height: 100px;
+}
+#table
+{
+    margin-left: 40px;
+    
+
+}
+#picdiv
+{
+    width: 250px;
+    height: 400px;
+}
+.imgclass
+{
+    width: 250px;
+    height: 250px;
+}
+#alertdiv
+{
+    margin-top: 7px;
+margin-left: 584px;
+}
